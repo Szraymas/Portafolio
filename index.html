@@ -81,6 +81,16 @@ section{padding:60px 0 10px;scroll-margin-top:10px}
 .pr:nth-child(2) .r{background:var(--verde)}.pr:nth-child(3) .r{background:var(--azul);color:#fff}
 .pr .r strong{font-family:var(--h);font-size:clamp(52px,6vw,84px);line-height:1}
 .pr .r span{font-weight:700}
+.toolbox{margin-top:42px;padding:clamp(20px,4vw,32px);background:#fff;border:var(--b);box-shadow:var(--sh)}
+.toolbox-head{display:flex;align-items:end;justify-content:space-between;gap:18px;margin-bottom:20px}
+.toolbox-head h3{font-family:var(--h);font-size:clamp(25px,4vw,38px);line-height:1;text-transform:uppercase;overflow-wrap:anywhere}
+.toolbox-head p{max-width:420px;font-size:13px}
+.tool-groups{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.tool-groups article{min-width:0;padding:16px;background:var(--bg);border:2px solid var(--tinta)}
+.tool-groups h4{font-family:var(--h);font-size:16px;text-transform:uppercase;margin-bottom:10px;overflow-wrap:anywhere}
+.tool-list{display:flex;flex-wrap:wrap;gap:7px}
+.tool-list span,.pr .stack span{display:inline-flex;align-items:center;max-width:100%;padding:4px 9px;border:2px solid var(--tinta);background:var(--amarillo);font-size:12px;font-weight:700;overflow-wrap:anywhere}
+.pr .stack{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}
 .github-feature{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-top:38px;padding:clamp(20px,4vw,36px);background:var(--verde);border:var(--b);box-shadow:var(--sh)}
 .github-feature .gh-kicker{font-size:12px;font-weight:700;text-transform:uppercase}
 .github-feature h3{font-family:var(--h);font-size:clamp(28px,4vw,44px);line-height:.95;text-transform:uppercase;margin:6px 0 10px;overflow-wrap:anywhere}
@@ -161,6 +171,13 @@ button{font:inherit;color:inherit;cursor:pointer}
   .contact{margin:44px 0 24px;box-shadow:6px 6px 0 var(--tinta)}
   .contact h2{font-size:clamp(38px,12vw,64px);overflow-wrap:anywhere}
   .contact .l{grid-template-columns:1fr;gap:12px}
+  .toolbox-head{align-items:flex-start;flex-direction:column}
+  .tool-groups{grid-template-columns:1fr}
+  .github-feature{flex-direction:column;align-items:stretch;gap:16px;padding:18px;min-width:0}
+  .github-feature>div{min-width:0;width:100%}
+  .github-feature h3{font-size:clamp(25px,8vw,36px);line-height:1.02}
+  .github-feature p{max-width:100%;overflow-wrap:anywhere}
+  .github-feature a{display:flex;width:100%;max-width:100%;min-width:0;flex:1 1 auto;white-space:normal;overflow-wrap:anywhere;line-height:1.35;padding:12px 10px}
 }
 @media (max-width:360px){
   .wrap{padding-right:14px;padding-left:14px}
@@ -170,6 +187,10 @@ button{font:inherit;color:inherit;cursor:pointer}
   .stk.a{position:static;display:inline-block;margin:14px 8px 0 0;transform:none}
   .stk.b{margin-top:14px}
   .sk .proof{padding:9px}
+  .github-feature{padding:14px;gap:14px}
+  .github-feature a{font-size:14px;box-shadow:3px 3px 0 var(--tinta)}
+  .github-feature{padding:14px;gap:14px}
+  .github-feature a{font-size:14px;box-shadow:3px 3px 0 var(--tinta)}
 }
 @media (hover:none){header.top nav a:hover,.sk:hover,.pr:hover{transform:none;box-shadow:var(--sh)}}
 </style>
@@ -181,7 +202,7 @@ button{font:inherit;color:inherit;cursor:pointer}
      Todas las plantillas usan el mismo PERFIL: puedes cambiar de estilo sin reescribir nada.
      ========================================================= -->
 <div class="wrap">
-  <header class="top box"><a class="lg" href="#" id="lg"></a><nav><a href="#habilidades">Skills</a><a href="#proyectos">Proyectos</a><a href="#trayectoria">Trayectoria</a><a href="#contacto">Contacto</a></nav></header>
+  <header class="top box"><a class="lg" href="#" id="lg"></a><nav><a href="#trayectoria">Trayectoria</a><a href="#habilidades">Skills</a><a href="#proyectos">Proyectos</a><a href="#contacto">Contacto</a></nav></header>
   <section class="hero" style="padding-top:clamp(24px,5vw,60px)">
     <span class="lab rv" id="rol"></span>
     <h1 class="rv" style="--d:.05s" id="nombre"></h1>
@@ -190,9 +211,9 @@ button{font:inherit;color:inherit;cursor:pointer}
   </section>
   <div class="marq" aria-hidden="true"><div id="marq"></div></div>
   <div class="nums" id="cifras"></div>
-  <section id="habilidades"><div class="sh rv"><h2>Lo que sé hacer</h2><span class="ct" id="ct"></span></div><div class="skills" id="hab"></div></section>
-  <section id="proyectos"><div class="sh rv"><h2>Pruebas</h2></div><div class="projs" id="proy"></div><aside class="github-feature box rv"><div><p class="gh-kicker">¿Quieres ver más?</p><h3>Hay más código en GitHub</h3><p>En mi perfil encontrarás otros proyectos y repositorios. Explora mis desarrollos y revisa el código disponible.</p></div><a href="https://github.com/Szraymas" target="_blank" rel="noopener noreferrer">Explorar mis proyectos en GitHub <span aria-hidden="true">↗</span></a></aside></section>
-  <section id="trayectoria"><div class="sh rv"><h2>Trayectoria</h2></div><div class="tbl rv" id="tray"></div></section>
+    <section id="trayectoria"><div class="sh rv"><h2>Trayectoria</h2></div><div class="tbl rv" id="tray"></div></section>
+  <section id="habilidades"><div class="sh rv"><h2>Lo que sé hacer</h2><span class="ct" id="ct"></span></div><div class="skills" id="hab"></div><div class="toolbox rv"><div class="toolbox-head"><h3>Herramientas que he usado</h3><p>Un vistazo al stack y las plataformas que he trabajado en distintos proyectos.</p></div><div class="tool-groups"><article><h4>Lenguajes y desarrollo</h4><div class="tool-list"><span>C#</span><span>.NET</span><span>TypeScript</span><span>JavaScript</span><span>Python</span><span>PHP</span></div></article><article><h4>Frontend</h4><div class="tool-list"><span>Angular</span><span>React</span><span>React Native</span><span>HTML</span><span>CSS</span></div></article><article><h4>Móvil e integraciones</h4><div class="tool-list"><span>Android Studio</span><span>Java</span><span>OAuth de Google</span></div></article><article><h4>QA y seguimiento</h4><div class="tool-list"><span>Playwright</span><span>Selenium</span><span>Pruebas manuales</span><span>Automatización de pruebas</span><span>Jira</span></div></article><article><h4>IA y automatización</h4><div class="tool-list"><span>IBM watsonx</span><span>Bob (IBM)</span><span>ICA</span><span>Agentes de IA</span><span>Definición de tools</span><span>n8n</span><span>TypeBot</span></div></article><article><h4>Bases de datos</h4><div class="tool-list"><span>MySQL</span><span>PostgreSQL</span><span>MongoDB</span><span>SQL Server</span><span>DBeaver</span></div></article><article><h4>Plataformas y utilidades</h4><div class="tool-list"><span>Git</span><span>AWS</span><span>GCP</span><span>Linux</span><span>Office</span></div></article></div></div></section>
+  <section id="proyectos"><div class="sh rv"><h2>Proyectos</h2></div><div class="projs" id="proy"></div><aside class="github-feature box rv"><div><p class="gh-kicker">¿Quieres ver más?</p><h3>Hay más código en GitHub</h3><p>En mi perfil encontrarás otros proyectos y repositorios. Explora mis desarrollos y revisa el código disponible.</p></div><a href="https://github.com/Szraymas" target="_blank" rel="noopener noreferrer">Explorar mis proyectos en GitHub <span aria-hidden="true">↗</span></a></aside></section>
   <section class="contact rv" id="contacto"><h2>¡Hablemos ya!</h2><div class="l" id="lnk"></div></section>
   <footer id="pie"></footer>
 </div>
@@ -234,22 +255,22 @@ const PERFIL = {
   ],
   proyectos: [
     { id: "ibm", titulo: "QA y desarrollo de aplicaciones para banca", enlace: "",
-      problema: "Los proyectos bancarios requerían pruebas, desarrollo de interfaces y participación en el ciclo de vida del software.",
-      accion: "Desempeñé un doble rol como QA Analyst y Application Developer. Automaticé pruebas con Playwright, TypeScript y Python, desarrollé interfaces gráficas y participé en iniciativas de migración de cloud entre GCP y AWS.",
+      problema: "Los proyectos bancarios requerían pruebas, desarrollo de interfaces y participación en el ciclo de vida del software.", stack: ["Python", "TypeScript", "Playwright", "Angular", "AWS", "GCP", "IBM watsonx", "Bob (IBM)", "ICA", "Jira"],
+      accion: "Desempeñé un doble rol como QA Analyst y Application Developer. Automaticé pruebas con Playwright, TypeScript y Python, desarrollé interfaces gráficas con Angular y participé en iniciativas de migración entre AWS y GCP. También usé herramientas de IA y Jira para apoyar la automatización y el seguimiento de incidencias.",
       resultado: { cifra: "2 roles", texto: "QA Analyst + Application Developer · trabajo privado, sin demo pública" },
       habilidades: ["typescript", "playwright", "agentes-ia"] },
     { id: "granos", titulo: "Granos del Meta · plataforma transaccional", enlace: "https://granosdelmeta.com/",
-      problema: "La empresa necesitaba gestionar productos y habilitar ventas por medio de proveedores desde su aplicativo transaccional.",
-      accion: "En Cube Lab trabajé en proyectos de chatbots y aplicaciones web, incluido el aplicativo de gestión de productos de Granos del Meta.",
+      problema: "La empresa necesitaba gestionar productos y habilitar ventas por medio de proveedores desde su aplicativo transaccional.", stack: ["Angular", ".NET"],
+      accion: "En Cube Lab participé en proyectos de chatbots con TypeBot y n8n, además de aplicaciones web con Angular y .NET, incluido el aplicativo de gestión de productos de Granos del Meta.",
       resultado: { cifra: "Web + app", texto: "gestión de productos y ventas mediante proveedores" },
       habilidades: ["angular", "agentes-ia"] },
     { id: "abogados", titulo: "Plataforma web para servicios jurídicos", enlace: "https://youtu.be/_fwY3q7SBc8",
-      problema: "La experiencia debía presentar servicios jurídicos y manejar roles según el tipo de usuario.",
-      accion: "El demo muestra la oferta de servicios y la gestión de roles. El aplicativo corre en local y requiere una base de datos; comparto el recorrido en video.",
+      problema: "La experiencia debía presentar servicios jurídicos y manejar roles según el tipo de usuario.", stack: ["Python"],
+      accion: "Desarrollé la plataforma web con Python. El demo muestra la oferta de servicios y la gestión de roles según el tipo de usuario. El aplicativo corre en local y requiere una base de datos; comparto el recorrido en video.",
       resultado: { cifra: "Demo", texto: "recorrido en video · ejecución local con base de datos" },
       habilidades: [] },
     { id: "farmacias", titulo: "Aplicación móvil para encontrar farmacias", enlace: "https://youtu.be/2DB4bjVO0bc",
-      problema: "Una persona necesita ubicar una farmacia cercana según su ubicación.",
+      problema: "Una persona necesita ubicar una farmacia cercana según su ubicación.", stack: ["Android Studio", "Java"],
       accion: "Realicé una aplicación móvil con Android Studio y Java para encontrar farmacias cercanas según la ubicación de la persona. El video muestra el aplicativo ejecutándose en local.",
       resultado: { cifra: "Android", texto: "demo en video · Android Studio + Java" },
       habilidades: [] }
@@ -339,7 +360,7 @@ $("#hab").innerHTML = P.habilidades.map((h, i) => `<article class="sk rv" style=
 $("#proy").innerHTML = P.proyectos.map(p => `<article class="pr rv" id="p-${p.id}">
   <div class="l"><h3>${p.enlace ? `<a href="${esc(p.enlace)}" target="_blank" rel="noopener">${esc(p.titulo)} ↗</a>` : esc(p.titulo)}</h3>
     <div class="txt"><p><b>Problema</b>${esc(p.problema)}</p><p><b>Lo que hice</b>${esc(p.accion)}</p></div>
-    <div class="tg">${habsDe(p).map(id => `<a href="#h-${id}">${esc(HAB[id].nombre)}</a>`).join("")}</div></div>
+    <div class="tg">${habsDe(p).map(id => `<a href="#h-${id}">${esc(HAB[id].nombre)}</a>`).join("")}</div><div class="stack" aria-label="Herramientas utilizadas">${(p.stack || []).map(t => `<span>${esc(t)}</span>`).join("")}</div></div>
   <div class="r"><strong>${esc(p.resultado.cifra)}</strong><span>${esc(p.resultado.texto)}</span></div></article>`).join("");
 $("#tray").innerHTML = P.trayectoria.map(t => `<div class="row"><div class="w">${esc(t.cuando)}</div><div class="d"><h3>${esc(t.rol)}</h3><p>${esc(t.lugar)} · ${esc(t.detalle)}</p></div></div>`).join("");
 $("#lnk").innerHTML = enlacesContacto().map(l => `<a href="${esc(l.href)}"${l.k !== "correo" ? ' target="_blank" rel="noopener"' : ""}>${esc(l.t)} ↗</a>`).join("") + `<button type="button" id="copy"></button>`;
@@ -349,4 +370,7 @@ onReady(() => reveal());
 </script>
 </body>
 </html>
+
+
+
 
