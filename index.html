@@ -1,0 +1,352 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Felipe Suárez Másmela · QA Analyst y Application Developer</title>
+<meta name="description" content="Portafolio de Felipe Suárez Másmela: QA, desarrollo de aplicaciones, automatización y proyectos web.">
+<meta property="og:title" content="Felipe Suárez Másmela · Portafolio">
+<meta property="og:description" content="QA, desarrollo de aplicaciones, automatización y proyectos web.">
+<meta name="theme-color" content="#ffe14d">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+/* =========================================================
+   PLANTILLA: Neo-brutalista
+   Bloques de color, bordes gruesos, sombras duras y stickers. Atrevido y divertido, sin perder el orden. Para perfiles creativos, marketing o tecnología joven.
+   Para cambiar colores o fuentes, edita solo las variables de :root.
+   ========================================================= */
+:root{--bg:#fffdf5;--tinta:#111111;--amarillo:#ffe14d;--azul:#3b5bff;--rosa:#ff7ac6;--verde:#7cf29a;--acento:#3b5bff;--b:3px solid var(--tinta);--sh:6px 6px 0 var(--tinta);--h:"Archivo Black",Impact,"Arial Black",sans-serif;--m:"Space Mono",ui-monospace,Menlo,monospace}
+html{overflow-x:clip}
+body{overflow-x:clip;background:var(--bg);color:var(--tinta);font-family:var(--m);font-size:15px;line-height:1.55;background-image:radial-gradient(var(--tinta) 1px,transparent 1.2px);background-size:22px 22px;background-attachment:fixed}
+body::before{content:"";position:fixed;inset:0;background:var(--bg);opacity:.92;z-index:-1}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(16px,4vw,40px)}
+.box{background:#fff;border:var(--b);box-shadow:var(--sh)}
+header.top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:20px 0;padding:12px 16px}
+header.top .lg{font-family:var(--h);font-size:22px;text-decoration:none}
+header.top nav{display:flex;gap:8px}
+header.top nav a{text-decoration:none;font-weight:700;border:2px solid var(--tinta);padding:6px 12px;background:var(--bg);transition:transform .15s,box-shadow .15s}
+header.top nav a:hover{transform:translate(-2px,-2px);box-shadow:3px 3px 0 var(--tinta);background:var(--amarillo)}
+.hero{background:var(--amarillo);border:var(--b);box-shadow:10px 10px 0 var(--tinta);padding:clamp(24px,5vw,60px);position:relative;margin-top:30px}
+.hero .lab{display:inline-block;background:var(--tinta);color:var(--amarillo);font-weight:700;padding:4px 10px;font-size:13px;text-transform:uppercase}
+h1{font-family:var(--h);font-weight:400;font-size:clamp(56px,10vw,150px);line-height:.85;text-transform:uppercase;letter-spacing:-.02em;margin:18px 0}
+h1 span{display:block;color:var(--azul);-webkit-text-stroke:3px var(--tinta)}
+.tit{font-size:clamp(16px,1.5vw,19px);max-width:640px;background:#fff;border:var(--b);padding:14px 16px}
+.tit b{background:var(--rosa);padding:0 4px}
+.stk{position:absolute;font-family:var(--h);font-size:15px;text-transform:uppercase;border:var(--b);padding:10px 14px;box-shadow:4px 4px 0 var(--tinta)}
+.stk.a{top:-22px;right:30px;background:var(--verde);transform:rotate(6deg)}
+.stk.b{bottom:30px;right:40px;background:var(--rosa);transform:rotate(-7deg);max-width:220px;text-align:center}
+.js .stk{transform:scale(0) rotate(0)}
+.js.ready .stk.a{transform:rotate(6deg);transition:transform .6s cubic-bezier(.34,1.8,.64,1) .5s}
+.js.ready .stk.b{transform:rotate(-7deg);transition:transform .6s cubic-bezier(.34,1.8,.64,1) .65s}
+.marq{margin:34px calc(50% - 50vw) 0;background:var(--tinta);color:var(--bg);border-top:var(--b);border-bottom:var(--b);overflow:hidden;transform:rotate(-1.5deg)}
+.marq div{display:flex;gap:34px;white-space:nowrap;padding:12px 0;font-family:var(--h);font-size:22px;text-transform:uppercase;animation:mq 22s linear infinite;width:max-content}
+.marq span::after{content:"✦";margin-left:34px;color:var(--amarillo)}
+@keyframes mq{to{transform:translateX(-50%)}}
+.nums{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:44px 0 10px}
+.nums div{padding:18px}
+.nums div:nth-child(1){background:var(--azul);color:#fff}.nums div:nth-child(2){background:var(--rosa)}.nums div:nth-child(3){background:var(--verde)}
+.nums strong{display:block;font-family:var(--h);font-size:clamp(44px,5vw,70px);line-height:1}
+.nums p{font-weight:700}
+section{padding:60px 0 10px;scroll-margin-top:10px}
+.sh{display:flex;align-items:center;gap:14px;margin-bottom:26px;flex-wrap:wrap}
+.sh h2{font-family:var(--h);font-weight:400;font-size:clamp(36px,5vw,64px);text-transform:uppercase;line-height:.95;background:#fff;border:var(--b);box-shadow:var(--sh);padding:8px 16px}
+.sh .ct{font-family:var(--h);background:var(--amarillo);border:var(--b);padding:8px 12px;font-size:20px;transform:rotate(4deg)}
+.skills{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.sk{border:var(--b);box-shadow:var(--sh);padding:24px;position:relative;scroll-margin-top:20px;transition:transform .15s,box-shadow .15s}
+.sk:nth-child(4n+1){background:#fff}.sk:nth-child(4n+2){background:#e6ebff}.sk:nth-child(4n+3){background:#ffe8f4}.sk:nth-child(4n){background:#fff6c7}
+.sk:hover,.sk:target{transform:translate(-4px,-4px);box-shadow:10px 10px 0 var(--tinta)}
+.sk .n{position:absolute;top:-16px;left:18px;font-family:var(--h);background:var(--tinta);color:var(--amarillo);padding:2px 10px;font-size:18px}
+.sk h3{font-family:var(--h);font-weight:400;font-size:28px;text-transform:uppercase;line-height:1;margin-top:6px}
+.sk .tp{display:inline-block;font-size:12px;font-weight:700;text-transform:uppercase;border:2px solid var(--tinta);padding:1px 8px;margin-top:10px;background:var(--bg)}
+.sk p{margin-top:12px}
+.sk .proof{background:#fff;border:2px dashed var(--tinta);padding:12px;margin-top:14px}
+.sk .proof b{text-transform:uppercase;font-size:12px}
+.sk .proof a{font-weight:700;color:var(--azul);white-space:nowrap}
+.sk .tools{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.sk .tools span{border:2px solid var(--tinta);background:var(--amarillo);font-weight:700;font-size:12px;padding:2px 8px}
+.projs{display:grid;gap:28px}
+.pr{display:grid;grid-template-columns:1.5fr 1fr;gap:0;border:var(--b);box-shadow:8px 8px 0 var(--tinta);background:#fff;scroll-margin-top:20px;transition:transform .2s}
+.pr:nth-child(odd){transform:rotate(-.6deg)}.pr:nth-child(even){transform:rotate(.6deg)}
+.pr:hover,.pr:target{transform:rotate(0) translate(-3px,-3px)}
+.pr .l{padding:26px}
+.pr h3{font-family:var(--h);font-weight:400;font-size:clamp(26px,3vw,40px);text-transform:uppercase;line-height:.95}
+.pr .txt{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+.pr .txt b{display:block;text-transform:uppercase;font-size:12px}
+.pr .tg{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.pr .tg a{font-weight:700;text-decoration:none;border:2px solid var(--tinta);padding:3px 10px;background:var(--bg)}
+.pr .tg a:hover{background:var(--rosa)}
+.pr .r{border-left:var(--b);background:var(--rosa);display:flex;flex-direction:column;justify-content:center;padding:26px;text-align:center}
+.pr:nth-child(2) .r{background:var(--verde)}.pr:nth-child(3) .r{background:var(--azul);color:#fff}
+.pr .r strong{font-family:var(--h);font-size:clamp(52px,6vw,84px);line-height:1}
+.pr .r span{font-weight:700}
+.github-feature{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-top:38px;padding:clamp(20px,4vw,36px);background:var(--verde);border:var(--b);box-shadow:var(--sh)}
+.github-feature .gh-kicker{font-size:12px;font-weight:700;text-transform:uppercase}
+.github-feature h3{font-family:var(--h);font-size:clamp(28px,4vw,44px);line-height:.95;text-transform:uppercase;margin:6px 0 10px;overflow-wrap:anywhere}
+.github-feature p{max-width:620px}
+.github-feature a{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;flex:0 0 auto;padding:12px 16px;background:#fff;border:var(--b);box-shadow:4px 4px 0 var(--tinta);font-weight:700;text-decoration:none;text-align:center}
+.github-feature a:hover{background:var(--amarillo);transform:translate(-2px,-2px)}
+.tbl{border:var(--b);box-shadow:var(--sh);background:#fff}
+.tbl .row{display:grid;grid-template-columns:200px 1fr;border-bottom:var(--b)}
+.tbl .row:last-child{border-bottom:0}
+.tbl .w{background:var(--amarillo);border-right:var(--b);padding:16px;font-weight:700}
+.tbl .d{padding:16px}
+.tbl h3{font-family:var(--h);font-weight:400;text-transform:uppercase;font-size:20px}
+.contact{margin:60px 0 30px;background:var(--azul);color:#fff;border:var(--b);box-shadow:12px 12px 0 var(--tinta);padding:clamp(28px,5vw,60px)}
+.contact h2{font-family:var(--h);font-weight:400;font-size:clamp(48px,8vw,120px);text-transform:uppercase;line-height:.88}
+.contact .l{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
+.contact a,.contact button{font-family:var(--m);font-weight:700;font-size:16px;text-decoration:none;background:var(--amarillo);color:var(--tinta);border:var(--b);box-shadow:5px 5px 0 var(--tinta);padding:12px 18px;transition:transform .1s,box-shadow .1s;overflow-wrap:anywhere}
+.contact a:active,.contact button:active{transform:translate(5px,5px);box-shadow:0 0 0 var(--tinta)}
+.contact a:hover,.contact button:hover{background:#fff}
+footer{text-align:center;padding:10px 0 40px;font-weight:700}
+@media (max-width:860px){
+  header.top{flex-wrap:wrap;align-items:flex-start}
+  header.top nav{display:flex;width:100%;gap:8px;overflow-x:auto;padding:2px 2px 8px;scrollbar-width:thin;-webkit-overflow-scrolling:touch}
+  header.top nav a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;flex:0 0 auto;white-space:nowrap}
+  .stk.b{position:static;display:inline-block;margin-top:18px}
+  .skills{grid-template-columns:minmax(0,1fr)}
+  .pr{grid-template-columns:minmax(0,1fr)}.pr .r{border-left:0;border-top:var(--b)}.pr .txt{grid-template-columns:1fr}
+  .nums{grid-template-columns:1fr}
+  .tbl .row{grid-template-columns:1fr}.tbl .w{border-right:0;border-bottom:var(--b)}
+  h1{font-size:clamp(2rem,10vw,5.5rem);overflow-wrap:anywhere}
+  h1 span{-webkit-text-stroke:2px var(--tinta)}
+  .hero{padding-right:clamp(20px,5vw,60px);padding-left:clamp(20px,5vw,60px)}
+  .stk.a{right:16px}
+  .nums{gap:12px}
+  .pr .l,.pr .r{padding:clamp(18px,4vw,26px)}
+  .pr h3,.pr .txt p,.tbl .d,header.top .lg{overflow-wrap:anywhere}
+  .contact .l{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr))}
+  .contact .l a,.contact .l button{display:flex;align-items:center;justify-content:center;min-height:48px;text-align:center}
+}
+/* ---------- base común ---------- */
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--acento);outline-offset:3px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+/* Movimiento: visible por defecto; el estado oculto solo aplica si cargó el JS */
+.js .rv{opacity:0;transform:translateY(16px)}
+.js .rv.in{opacity:1;transform:none;transition:opacity .7s ease,transform .8s cubic-bezier(.16,1,.3,1);transition-delay:var(--d,0s)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js .rv{opacity:1;transform:none}}
+
+@media (max-width:540px){
+  body{font-size:14px}
+  header.top{padding:10px 12px}
+  header.top .lg{font-size:19px}
+  header.top nav{gap:6px}
+  header.top nav a{padding:7px 10px;font-size:12px}
+  .hero{margin-top:24px;box-shadow:6px 6px 0 var(--tinta)}
+  h1{font-size:clamp(1.85rem,10vw,3.4rem);line-height:.92}
+  h1 span{-webkit-text-stroke:1.5px var(--tinta)}
+  .tit{padding:12px;font-size:15px}
+  .stk.a{top:-16px;right:12px;font-size:12px;padding:7px 9px}
+  .marq div{font-size:18px;gap:22px}
+  section{padding-top:44px}
+  .sh{gap:10px}
+  .sh h2{font-size:clamp(28px,9vw,44px);padding:8px 10px}
+  .sk{padding:20px}
+  .sk h3{font-size:25px}
+  .sk .proof a{white-space:normal;overflow-wrap:anywhere}
+  .pr{box-shadow:5px 5px 0 var(--tinta)}
+  .pr:nth-child(odd),.pr:nth-child(even){transform:none}
+  .pr:hover,.pr:target{transform:translateY(-2px)}
+  .pr .txt{gap:12px}
+  .pr .tg a{min-height:40px;display:inline-flex;align-items:center}
+  .pr .r strong{font-size:clamp(42px,13vw,64px)}
+  .tbl .w,.tbl .d{padding:12px}
+  .contact{margin:44px 0 24px;box-shadow:6px 6px 0 var(--tinta)}
+  .contact h2{font-size:clamp(38px,12vw,64px);overflow-wrap:anywhere}
+  .contact .l{grid-template-columns:1fr;gap:12px}
+}
+@media (max-width:360px){
+  .wrap{padding-right:14px;padding-left:14px}
+  .hero{padding-right:16px!important;padding-left:16px!important}
+  h1{font-size:clamp(1.7rem,9.5vw,2.25rem)}
+  .hero .lab{font-size:11px}
+  .stk.a{position:static;display:inline-block;margin:14px 8px 0 0;transform:none}
+  .stk.b{margin-top:14px}
+  .sk .proof{padding:9px}
+}
+@media (hover:none){header.top nav a:hover,.sk:hover,.pr:hover{transform:none;box-shadow:var(--sh)}}
+</style>
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<!-- =========================================================
+     TUS DATOS: edita solo el objeto PERFIL (en el script de abajo).
+     Todas las plantillas usan el mismo PERFIL: puedes cambiar de estilo sin reescribir nada.
+     ========================================================= -->
+<div class="wrap">
+  <header class="top box"><a class="lg" href="#" id="lg"></a><nav><a href="#habilidades">Skills</a><a href="#proyectos">Proyectos</a><a href="#trayectoria">Trayectoria</a><a href="#contacto">Contacto</a></nav></header>
+  <section class="hero" style="padding-top:clamp(24px,5vw,60px)">
+    <span class="lab rv" id="rol"></span>
+    <h1 class="rv" style="--d:.05s" id="nombre"></h1>
+    <p class="tit rv" style="--d:.15s" id="titular"></p>
+    <span class="stk a" id="estado"></span><span class="stk b" id="ciudad"></span>
+  </section>
+  <div class="marq" aria-hidden="true"><div id="marq"></div></div>
+  <div class="nums" id="cifras"></div>
+  <section id="habilidades"><div class="sh rv"><h2>Lo que sé hacer</h2><span class="ct" id="ct"></span></div><div class="skills" id="hab"></div></section>
+  <section id="proyectos"><div class="sh rv"><h2>Pruebas</h2></div><div class="projs" id="proy"></div><aside class="github-feature box rv"><div><p class="gh-kicker">¿Quieres ver más?</p><h3>Hay más código en GitHub</h3><p>En mi perfil encontrarás otros proyectos y repositorios. Explora mis desarrollos y revisa el código disponible.</p></div><a href="https://github.com/Szraymas" target="_blank" rel="noopener noreferrer">Explorar mis proyectos en GitHub <span aria-hidden="true">↗</span></a></aside></section>
+  <section id="trayectoria"><div class="sh rv"><h2>Trayectoria</h2></div><div class="tbl rv" id="tray"></div></section>
+  <section class="contact rv" id="contacto"><h2>¡Hablemos ya!</h2><div class="l" id="lnk"></div></section>
+  <footer id="pie"></footer>
+</div>
+<noscript><p style="padding:20px;text-align:center">Activa JavaScript para ver el portafolio completo.</p></noscript>
+<script>
+/* =========================================================
+   PERFIL · TODO lo que se muestra sale de aquí
+   ========================================================= */
+const PERFIL = {
+  nombre: ["Felipe", "Suárez Másmela"],
+  iniciales: "FSM",
+  usuario: "felipe",
+  rol: "QA Analyst · Application Developer",
+  ciudad: "Bogotá · Colombia",
+  estado: "QA + desarrollo + IA",
+  titular: "Conecto <b>calidad de software</b>, desarrollo de aplicaciones y automatización para crear experiencias digitales útiles. Me interesa explorar agentes de IA y soluciones que simplifican procesos.",
+  cifras: [
+    { valor: 4, prefijo: "", sufijo: "", texto: "habilidades técnicas destacadas" },
+    { valor: 2, prefijo: "", sufijo: "", texto: "roles desempeñados en IBM" },
+    { valor: 2, prefijo: "", sufijo: "", texto: "demos personales en video" }
+  ],
+  habilidades: [
+    { id: "angular", nombre: "Angular", tipo: "Técnica",
+      que: "Desarrollo interfaces y aplicaciones web para experiencias y procesos de negocio.",
+      prueba: "En Cube Lab trabajé en aplicaciones web, incluida una plataforma de gestión de productos y ventas para proveedores.",
+      herramientas: ["Angular", ".NET", "Typebot", "n8n"], proyectos: ["granos"] },
+    { id: "typescript", nombre: "TypeScript", tipo: "Técnica",
+      que: "Lo uso para desarrollar interfaces y automatizaciones de pruebas.",
+      prueba: "Desarrollé scripts de automatización de QA en proyectos del sector bancario.",
+      herramientas: ["TypeScript", "Angular"], proyectos: ["ibm"] },
+    { id: "playwright", nombre: "Playwright", tipo: "Técnica",
+      que: "Automatizo pruebas funcionales para apoyar los ciclos de aseguramiento de calidad.",
+      prueba: "Automaticé pruebas en iniciativas bancarias durante el ciclo de QA y de desarrollo de software.",
+      herramientas: ["Playwright", "TypeScript", "Python"], proyectos: ["ibm"] },
+    { id: "agentes-ia", nombre: "Agentes de IA", tipo: "Técnica",
+      que: "Participo en la construcción de agentes y herramientas para automatizar flujos de consulta y procesamiento de información.",
+      prueba: "He trabajado en iniciativas de agentes de IA en IBM y en proyectos de chatbots en Cube Lab.",
+      herramientas: ["IBM watsonx", "n8n", "Typebot"], proyectos: ["ibm", "granos"] }
+  ],
+  proyectos: [
+    { id: "ibm", titulo: "QA y desarrollo de aplicaciones para banca", enlace: "",
+      problema: "Los proyectos bancarios requerían pruebas, desarrollo de interfaces y participación en el ciclo de vida del software.",
+      accion: "Desempeñé un doble rol como QA Analyst y Application Developer. Automaticé pruebas con Playwright, TypeScript y Python, desarrollé interfaces gráficas y participé en iniciativas de migración de cloud entre GCP y AWS.",
+      resultado: { cifra: "2 roles", texto: "QA Analyst + Application Developer · trabajo privado, sin demo pública" },
+      habilidades: ["typescript", "playwright", "agentes-ia"] },
+    { id: "granos", titulo: "Granos del Meta · plataforma transaccional", enlace: "https://granosdelmeta.com/",
+      problema: "La empresa necesitaba gestionar productos y habilitar ventas por medio de proveedores desde su aplicativo transaccional.",
+      accion: "En Cube Lab trabajé en proyectos de chatbots y aplicaciones web, incluido el aplicativo de gestión de productos de Granos del Meta.",
+      resultado: { cifra: "Web + app", texto: "gestión de productos y ventas mediante proveedores" },
+      habilidades: ["angular", "agentes-ia"] },
+    { id: "abogados", titulo: "Plataforma web para servicios jurídicos", enlace: "https://youtu.be/_fwY3q7SBc8",
+      problema: "La experiencia debía presentar servicios jurídicos y manejar roles según el tipo de usuario.",
+      accion: "El demo muestra la oferta de servicios y la gestión de roles. El aplicativo corre en local y requiere una base de datos; comparto el recorrido en video.",
+      resultado: { cifra: "Demo", texto: "recorrido en video · ejecución local con base de datos" },
+      habilidades: [] },
+    { id: "farmacias", titulo: "Aplicación móvil para encontrar farmacias", enlace: "https://youtu.be/2DB4bjVO0bc",
+      problema: "Una persona necesita ubicar una farmacia cercana según su ubicación.",
+      accion: "Realicé una aplicación móvil con Android Studio y Java para encontrar farmacias cercanas según la ubicación de la persona. El video muestra el aplicativo ejecutándose en local.",
+      resultado: { cifra: "Android", texto: "demo en video · Android Studio + Java" },
+      habilidades: [] }
+  ],
+  trayectoria: [
+    { cuando: "2026", rol: "QA Analyst · Application Developer", lugar: "IBM Colombia · Consulting · Sector bancario", detalle: "Pruebas manuales y automatizadas, desarrollo de interfaces gráficas y participación en iniciativas de migración entre GCP y AWS. Los proyectos son privados y no cuento con acceso a sus repositorios." },
+    { cuando: "2025 — 2026", rol: "Desarrollador Full Stack Junior", lugar: "Cube Lab · Diseño de software", detalle: "Desarrollo backend con .NET y frontend con Angular; participación en ciclos completos de desarrollo, automatización y proyectos de chatbots con Typebot y n8n." },
+    { cuando: "2022 — 2026", rol: "Tecnología en Desarrollo de Software", lugar: "UNAD · Universidad Nacional Abierta y a Distancia", detalle: "Formación en desarrollo de software." },
+    { cuando: "2026", rol: "Preparación para AWS Certified Cloud Practitioner (CLF-C02)", lugar: "Udemy", detalle: "Preparación para el examen. No se presenta como certificación obtenida." },
+    { cuando: "2024 — 2025", rol: "Oracle Next Education F2T7 · Front-end", lugar: "Oracle & Alura Latam", detalle: "Formación en desarrollo front-end." },
+    { cuando: "Idiomas", rol: "Español nativo · Inglés intermedio B1", lugar: "", detalle: "" }
+  ],
+  lema: { texto: "Calidad en cada entrega. <em>Automatización para avanzar.</em>", firma: "Mi forma de trabajar" },
+  contacto: {
+    correo: "suarez.cdfp12fsm@gmail.com",
+    linkedin: "https://www.linkedin.com/in/felipe-su%C3%A1rez-m%C3%A1smela-019974253",
+    github: "https://github.com/Szraymas"
+  }
+};
+
+/* =========================================================
+   Utilidades comunes · no necesitas tocar nada de aquí hacia abajo
+   ========================================================= */
+const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const P = PERFIL, NOMBRE = P.nombre.join(" ");
+const PROY = Object.fromEntries(P.proyectos.map((p, i) => [p.id, { ...p, n: i + 1 }]));
+const HAB = Object.fromEntries(P.habilidades.map((h, i) => [h.id, { ...h, n: i + 1 }]));
+const nn = n => String(n).padStart(2, "0");
+const slug = s => String(s).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+const pruebas = h => h.proyectos.filter(id => PROY[id]);
+const habsDe = p => p.habilidades.filter(id => HAB[id]);
+const REDUCE = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const cifraHTML = c => `<span data-v="${c.valor}" data-p="${esc(c.prefijo)}" data-s="${esc(c.sufijo)}">${esc(c.prefijo)}${c.valor}${esc(c.sufijo)}</span>`;
+document.title = `${NOMBRE} · ${P.rol}`;
+
+function countUp(el) {
+  if (REDUCE || el.dataset.done) return; el.dataset.done = 1;
+  const v = +el.dataset.v, p = el.dataset.p, s = el.dataset.s, t0 = performance.now(), d = 1300;
+  const step = t => { const k = Math.min(1, (t - t0) / d), e = 1 - Math.pow(1 - k, 4); el.textContent = p + Math.round(v * e) + s; if (k < 1) requestAnimationFrame(step); };
+  requestAnimationFrame(step);
+}
+function reveal(sel = ".rv") {
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (!e.isIntersecting) return;
+    e.target.classList.add("in"); io.unobserve(e.target);
+    e.target.querySelectorAll("[data-v]").forEach(countUp);
+    if (e.target.matches("[data-v]")) countUp(e.target);
+  }), { rootMargin: "0px 0px -7% 0px", threshold: .06 });
+  $$(sel).forEach(el => io.observe(el));
+}
+/* Empieza cuando las fuentes están listas (máx. 1,1 s): así la tipografía no "salta" */
+function onReady(fn) {
+  Promise.race([document.fonts ? document.fonts.ready : Promise.resolve(), new Promise(r => setTimeout(r, 1100))])
+    .then(() => requestAnimationFrame(() => { document.documentElement.classList.add("ready"); fn && fn(); }));
+}
+function enlacesContacto() {
+  const c = P.contacto;
+  return [
+    { k: "correo", t: c.correo, href: `mailto:${c.correo}` },
+    c.linkedin && { k: "linkedin", t: "LinkedIn", href: c.linkedin },
+    c.github && { k: "github", t: "GitHub", href: c.github }
+  ].filter(Boolean);
+}
+function botonCopiar(el, etiqueta = "Copiar correo", ok = "¡Copiado!") {
+  if (!el) return; el.textContent = etiqueta;
+  el.addEventListener("click", () => navigator.clipboard?.writeText(P.contacto.correo).then(() => { el.textContent = ok; setTimeout(() => el.textContent = etiqueta, 1800); }));
+}
+
+/* =========================================================
+   Renderizado de esta plantilla
+   ========================================================= */
+$("#lg").textContent = P.iniciales + " ✦";
+$("#rol").textContent = P.rol;
+$("#nombre").innerHTML = `${esc(P.nombre[0])}<span>${esc(P.nombre[1])}</span>`;
+$("#titular").innerHTML = P.titular;
+$("#estado").textContent = P.estado; $("#ciudad").textContent = P.ciudad;
+const mq = P.habilidades.map(h => `<span>${esc(h.nombre)}</span>`).join("");
+$("#marq").innerHTML = mq + mq;
+$("#cifras").innerHTML = P.cifras.map((c, i) => `<div class="box rv" style="--d:${i * .08}s"><strong>${cifraHTML(c)}</strong><p>${esc(c.texto)}</p></div>`).join("");
+$("#ct").textContent = `×${P.habilidades.length}`;
+$("#hab").innerHTML = P.habilidades.map((h, i) => `<article class="sk rv" style="--d:${(i % 2) * .08}s" id="h-${h.id}">
+  <span class="n">#${nn(i + 1)}</span><h3>${esc(h.nombre)}</h3><span class="tp">${esc(h.tipo)} · ${pruebas(h).length} ${pruebas(h).length === 1 ? "proyecto" : "proyectos"}</span>
+  <p>${esc(h.que)}</p>
+  <div class="proof"><b>Prueba:</b> ${esc(h.prueba)} ${pruebas(h).map(id => `<a href="#p-${id}">→ ${esc(PROY[id].titulo)}</a>`).join(" ")}</div>
+  <div class="tools">${h.herramientas.map(t => `<span>${esc(t)}</span>`).join("")}</div></article>`).join("");
+$("#proy").innerHTML = P.proyectos.map(p => `<article class="pr rv" id="p-${p.id}">
+  <div class="l"><h3>${p.enlace ? `<a href="${esc(p.enlace)}" target="_blank" rel="noopener">${esc(p.titulo)} ↗</a>` : esc(p.titulo)}</h3>
+    <div class="txt"><p><b>Problema</b>${esc(p.problema)}</p><p><b>Lo que hice</b>${esc(p.accion)}</p></div>
+    <div class="tg">${habsDe(p).map(id => `<a href="#h-${id}">${esc(HAB[id].nombre)}</a>`).join("")}</div></div>
+  <div class="r"><strong>${esc(p.resultado.cifra)}</strong><span>${esc(p.resultado.texto)}</span></div></article>`).join("");
+$("#tray").innerHTML = P.trayectoria.map(t => `<div class="row"><div class="w">${esc(t.cuando)}</div><div class="d"><h3>${esc(t.rol)}</h3><p>${esc(t.lugar)} · ${esc(t.detalle)}</p></div></div>`).join("");
+$("#lnk").innerHTML = enlacesContacto().map(l => `<a href="${esc(l.href)}"${l.k !== "correo" ? ' target="_blank" rel="noopener"' : ""}>${esc(l.t)} ↗</a>`).join("") + `<button type="button" id="copy"></button>`;
+botonCopiar($("#copy"), "Copiar correo", "¡Copiado! ✓");
+$("#pie").textContent = `© ${new Date().getFullYear()} ${NOMBRE} ✦ Hecho con apoyo de IA`;
+onReady(() => reveal());
+</script>
+</body>
+</html>
+
